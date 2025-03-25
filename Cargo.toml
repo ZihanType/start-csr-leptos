@@ -1,0 +1,21 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition = "2024"
+authors = ["{{authors}}"]
+
+[dependencies]
+leptos = { version = "0.7", default-features = false, features = ["csr"] }
+leptos_router = { version = "0.7", default-features = false }
+# leptos_meta = { version = "0.7", default-features = false }
+console_log = { version = "1", default-features = false }
+log = { version = "0.4", default-features = false }
+console_error_panic_hook = { version = "0.1", default-features = false }
+
+[dev-dependencies]
+wasm-bindgen = { version = "0.2", default-features = false }
+wasm-bindgen-test = { version = "0.3", default-features = false }
+web-sys = { version = "0.3", default-features = false, features = [
+    "Document",
+    "Window",
+] }
