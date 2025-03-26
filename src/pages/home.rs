@@ -1,5 +1,6 @@
-use crate::components::counter_btn::Button;
 use leptos::prelude::*;
+
+use crate::components::counter_btn::Button;
 
 /// Default Home Page
 #[component]
@@ -24,7 +25,7 @@ pub fn Home() -> impl IntoView {
             }
         }>
 
-            <div class="flex flex-col items-center justify-around">
+        <div class="flex flex-col justify-around items-center">
 
                 <picture>
                     <source

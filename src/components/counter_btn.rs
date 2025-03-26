@@ -10,8 +10,10 @@ pub fn Button(#[prop(default = 1)] increment: i32) -> impl IntoView {
             class="btn"
             on:click=move |_| {
                 count.update(|count| *count += increment);
-            }>
-            "Click me: " {count}
+            }
+        >
+            "Click me: "
+            {count}
         </button>
     }
 }
