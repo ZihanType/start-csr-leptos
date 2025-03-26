@@ -1,9 +1,9 @@
-use leptos::prelude::*;
-use leptos_router::{components::*, path};
-
 // Modules
 mod components;
 mod pages;
+
+use leptos::prelude::*;
+use leptos_router::{components::*, path};
 
 // Top-Level pages
 use crate::pages::home::Home;
