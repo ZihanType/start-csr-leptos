@@ -25,7 +25,7 @@ pub fn Home() -> impl IntoView {
             }
         }>
 
-        <div class="flex flex-col justify-around items-center">
+            <div class="flex flex-col justify-around items-center">
 
                 <picture>
                     <source

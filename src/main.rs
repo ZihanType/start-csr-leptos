@@ -1,9 +1,15 @@
-use leptos::prelude::*;
 use {{crate_name}}::App;
+use leptos::prelude::*;
+use tracing::Level;
+use tracing_wasm::WASMLayerConfigBuilder;
 
 fn main() {
-    // set up logging
-    _ = console_log::init_with_level(log::Level::Debug);
+    let config = WASMLayerConfigBuilder::new()
+        .set_max_level(Level::DEBUG)
+        .build();
+
+    tracing_wasm::set_as_global_default_with_config(config);
+
     console_error_panic_hook::set_once();
 
     mount_to_body(|| {
