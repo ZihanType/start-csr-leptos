@@ -4,8 +4,8 @@
     "build": "tailwindcss -i index.css -o public/tailwind.css"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.0.15",
-    "daisyui": "^5.0.9",
-    "tailwindcss": "^4.0.15"
+    "@tailwindcss/cli": "^4.1.5",
+    "daisyui": "^5.0.35",
+    "tailwindcss": "^4.1.5"
   }
 }
