@@ -5,9 +5,9 @@ edition = "2024"
 authors = ["{{authors}}"]
 
 [dependencies]
-leptos = { version = "0.7", default-features = false, features = ["csr"] }
-leptos_router = { version = "0.7", default-features = false }
-# leptos_meta = { version = "0.7", default-features = false }
+leptos = { version = "0.8", default-features = false, features = ["csr"] }
+leptos_router = { version = "0.8", default-features = false }
+# leptos_meta = { version = "0.8", default-features = false }
 tracing = { version = "0.1", default-features = false }
 tracing-wasm = { version = "0.2", default-features = false }
 console_error_panic_hook = { version = "0.1", default-features = false }
